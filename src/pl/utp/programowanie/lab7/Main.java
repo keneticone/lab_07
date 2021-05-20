@@ -8,11 +8,11 @@ public class Main {
 
     public static void main(String[] args) {
         DogBuilder dogBuilder = DogBuilder.aDog();
-        Dog pikus = dogBuilder.withName("pikuś").withAge(1).build();
-        Dog azor = dogBuilder.withToys(Arrays.asList("kość", "piłka")).withName("azor").build();
+        Dog pikus = dogBuilder.withName("pikuś").withAge(1).withType("bulldog").build();
+        Dog neron = dogBuilder.withName("neron").withAge(2).withToys(Arrays.asList("kość", "piłka")).build();
 
         System.out.println(pikus);
-        System.out.println(azor);
+        System.out.println(neron);
 
 
 

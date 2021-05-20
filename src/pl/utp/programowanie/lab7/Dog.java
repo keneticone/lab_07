@@ -59,6 +59,10 @@ public class Dog {
             dog.type = this.type;
             dog.name = this.name;
             dog.toys = this.toys;
+            this.age = null;
+            this.type = null;
+            this.name = null;
+            this.toys = null;
             return dog;
         }
     }
