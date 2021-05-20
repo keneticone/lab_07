@@ -25,7 +25,7 @@ public class ZipCodeDecoderSingleton {
 
         // connecting and downloading zipcodes from db takes a lot of time...
         try {
-            Thread.sleep(1000l);
+            Thread.sleep(10000l);
         } catch (InterruptedException e) {
             // ignore
         }
@@ -33,8 +33,10 @@ public class ZipCodeDecoderSingleton {
         return new HashMap<Integer, String>() {{
             put(87100, "Toruń");
             put(61408, "Poznań");
+            put(85796, "Bydgoszcz");
+            put(02554, "Warszawa");
             //.... many, many codes
-            put(10101, "New YOrk");
+            put(10001, "New YOrk");
         }};
     }
 }
