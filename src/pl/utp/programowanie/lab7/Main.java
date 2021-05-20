@@ -9,10 +9,10 @@ public class Main {
     public static void main(String[] args) {
         DogBuilder dogBuilder = DogBuilder.aDog();
         Dog pikus = dogBuilder.withName("pikuś").withAge(1).withType("bulldog").build();
-        Dog neron = dogBuilder.withName("neron").withAge(2).withToys(Arrays.asList("kość", "piłka")).build();
+        Dog nerone = dogBuilder.withName("nerone").withAge(2).withToys(Arrays.asList("kość", "piłka")).build();
 
         System.out.println(pikus);
-        System.out.println(neron);
+        System.out.println(nerone);
 
 
 
@@ -33,7 +33,7 @@ public class Main {
 
         // 3 singleton
         ZipCodeDecoderSingleton zipCodeDecoder1 = ZipCodeDecoderSingleton.getInstance();
-        System.out.println(zipCodeDecoder1.decodeZipcode(02554));
+        System.out.println(zipCodeDecoder1.decodeZipcode(61408));
         System.out.println(zipCodeDecoder1);
 
         ZipCodeDecoderSingleton zipCodeDecoder2 = ZipCodeDecoderSingleton.getInstance();
